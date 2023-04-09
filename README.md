@@ -1,6 +1,6 @@
 # Supphiros
 
-(https://github.com/zig-jeff/Supphiros/blob/main/Preview1.png)
+![unknown-14](https://github.com/zig-jeff/Supphiros/blob/main/Preview1.png)
 
 
 It's Cheat MOD for V7. Works on Erekir as well.
@@ -101,4 +101,4 @@ zstarkai: drone launch, omnidirectional laser, energy field, unit repair.
  - 드론 발사, 전방위 레이져, 에너지 필드, 유닛 수리.
 
 ## Screenshots
-![unknown-14](https://github.com/zig-jeff/Supphiros/blob/main/Preview2.png)
+![unknown-15](https://github.com/zig-jeff/Supphiros/blob/main/Preview2.png)
