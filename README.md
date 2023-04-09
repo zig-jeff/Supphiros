@@ -4,12 +4,16 @@
 
 
 It's Cheat MOD for V7. Works on Erekir as well.
+
 에르키르에서도 사용할수 있는 치트 모드입니다.
 
 
 cheat blocks from super-cheat by Evo04Taser.
+
 some turret and Units from Sapphirium by Snake.
+
 some blocks and Units from many other MOD.
+
 edit Code, draw sprites and add ideas by Jeff.
 
 
@@ -83,7 +87,7 @@ cwisp: Automatic repair, following a nearby fighter.
  가까운 전투기를 따라다니며 자동 수리.
 
 ddagger: high speed machine gun fighter
- 고속 기관총 발사 전투기
+ 고속 기관총 발사 전투기.
 
 ekite: charge fighter with missiles, heavy bullet, and electric shocks.
  미사일, 충격탄, 전기충격을 장착한 돌격 전투기.
