@@ -97,3 +97,4 @@ zstarkai: drone launch, omnidirectional laser, energy field, unit repair.
  - 드론 발사, 전방위 레이져, 에너지 필드, 유닛 수리.
 
 ## Screenshots
+![unknown-14](https://github.com/zig-jeff/Supphiros/blob/main/2023-04-09-MindustrySC.png)
