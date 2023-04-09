@@ -1,0 +1,51 @@
+type: PowerTurret
+name: lighttest
+category: turret
+
+size: 3
+health: 3680
+armor: 38
+
+range: 210 /*480*/
+shootCone: 180
+reload: 6
+rotateSpeed: 0
+
+shootY: 0
+shootSound: none
+recoil: 0
+/*minWarmup: 0.9*/
+targetInterval: 20 /*0*/
+shootEffect: none
+loopSound: glow
+
+canOverdrive: false
+absorbLasers: true
+buildVisibility: shown
+displayAmmoMultiplier: false
+researchCostMultiplier: 0.5
+
+shoot: {
+    shots: 2
+}
+
+shootType: {
+    type: BulletType
+    damage: 75
+    /*minWarmup: 0.9*/
+    status: electrified
+    statusDuration: 30
+    smokeEffect: none
+    spawnUnit: lighttest-perdition
+}
+
+drawer: [{
+    type: DrawTurret
+    basePrefix: "reinforced-"
+    minWarmup: 40
+    progress: wormUp
+}]
+
+consumes: {}
+requirements: []
+research: {}

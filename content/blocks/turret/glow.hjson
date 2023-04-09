@@ -1,0 +1,124 @@
+type: PowerTurret
+name: glow
+category: turret
+
+size: 3
+health: 1450
+
+range: 268
+reload: 45
+rotateSpeed: 1.8
+
+targetGround: true
+targetAir: true
+
+inaccuracy: 0
+coolantMultiplier: 0.7
+/*recoil: 4*/
+/*recoilTime: 0.8*/
+/*shootCone: 12*/
+
+shootEffect: lancerLaserShoot
+/*shake: 3*/
+smokeEffect: none
+shootSound: shockBlast
+
+drawer: [{
+    type: DrawTurret
+    parts: [{
+        type: RegionPart
+        suffix: "-arml"
+        moveY: -3
+        progress: reload
+        /*progress: warmup*/
+        /*x: -8*/
+        moveRot: -10
+    } {
+        type: RegionPart
+        suffix: "-armr"
+        moveY: -3
+        progress: reload
+        moveRot: 10
+    }]
+}]
+
+shootType: {
+    type: PointBulletType
+    /*Sprite: glow-laser-bullet*/
+    /*width: 30*/
+    /*height: 100*/
+    /*spin: 0*/
+    /*rotationOffset: 0*/
+
+    lifetime: 68 /*37*/
+    speed: 7
+    damage: 420 /*65*/
+    splashDamage: 210
+    splashDamageRadius: 50
+
+    pierce: true
+    pierceBuilding: true
+    absorbable: false
+    hittable: false
+    reflectable: false
+
+    /*status: super-freezing*/
+    /*statusDuration: 85*/
+    /*lightning: 32
+    lightningLength: 6
+    lightningLengthRand: 2
+    lightningDamage: 110
+    lightningColor: a9d8ff
+    backColor: 757fcb
+    frontColor: ffffff*/
+
+    hitEffect: {
+        type: ParticleEffect
+        particles: 12
+        line: true
+        length: 60
+        /*spin: 180*/
+        sizeFrom: 58
+        sizeTo: 6
+        strokeFrom: 4
+        strokeTo: 2
+        colorFrom: a9d8ff
+        colorTo: 757 fcb
+    }
+
+    despawnHit: true
+    trailChance: 1
+    trailColor: a9d8ff
+
+    trailEffect: {
+        type: ParticleEffect
+        particles: 11
+        line: true
+        length: 20 /*-40*/
+        sizeFrom: 4
+        sizeTo: 0
+        strokeFrom: 3
+        strokeTo: 0
+        colorFrom: a9d8ff
+        colorTo: 757 fcb
+    }
+
+    fragBullets: 4
+    fragRandomSpread: 360
+    fragBullet: {
+        type: ShrapnelBulletType
+        length: 12 /*60*/
+        width: 5 /*10*/
+        serrations: 0
+        lifetime: 18
+        damage: 65 /*40*/
+        toColor: 757 fcb
+        shootEffect: none
+        smokeEffect: none
+        pierceCap: 4
+    }
+}
+
+consumes: {}
+research: {}
+requirements: []

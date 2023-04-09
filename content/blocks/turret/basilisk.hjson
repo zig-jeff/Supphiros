@@ -1,0 +1,50 @@
+type: PowerTurret
+name: Basilisk
+category: turret
+
+size: 3
+health: 5660
+armor: 52
+
+range: 366
+reload: 5
+rotateSpeed: 2.4
+
+targetGround: true
+targetAir: true
+
+powerUse: 0
+
+outlineColor: 00000000
+elevation: 0
+hasShadow: false
+squareSprite: false
+
+shootSound: shootBig
+
+shoot: {
+    type: ShootAlternate
+    spread: 8
+    shots: 2
+}
+
+shootType: {
+    type: BasicBulletType
+    width: 5 /*----8----*/
+    height: 8 /*----11----*/
+
+    lifetime: 350
+    speed: 4.2 /*----2.8----*/
+    damage: 62
+    drag: 0.01
+
+    /*pierce: true*/
+    /*pierceArmor: true*/
+    /*pierceBuilding: true*/
+    absorbable: false
+    reflectable: false
+}
+
+consumes: {}
+requirements: []
+research: {}
