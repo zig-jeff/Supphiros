@@ -1,4 +1,8 @@
 # Supphiros
+
+(https://github.com/zig-jeff/Supphiros/blob/main/Preview1.png)
+
+
 It's Cheat MOD for V7. Works on Erekir as well.
 
 에르키르에서도 사용할수 있는 치트 모드입니다.
@@ -97,4 +101,4 @@ zstarkai: drone launch, omnidirectional laser, energy field, unit repair.
  - 드론 발사, 전방위 레이져, 에너지 필드, 유닛 수리.
 
 ## Screenshots
-![unknown-14](https://github.com/zig-jeff/Supphiros/blob/main/2023-04-09-MindustrySC.png)
+![unknown-14](https://github.com/zig-jeff/Supphiros/blob/main/Preview2.png)
