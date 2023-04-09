@@ -8,6 +8,7 @@ It's Cheat MOD for V7. Works on Erekir as well.
 에르키르에서도 사용할수 있는 치트 모드입니다.
 
 
+
 cheat blocks from super-cheat by Evo04Taser.
 
 some turret and Units from Sapphirium by Snake.
@@ -15,6 +16,7 @@ some turret and Units from Sapphirium by Snake.
 some blocks and Units from many other MOD.
 
 edit Code, draw sprites and add ideas by Jeff.
+
 
 
 test play YouTube link https://youtu.be/wJojDcMEd2E
