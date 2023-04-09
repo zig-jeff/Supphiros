@@ -1,0 +1,21 @@
+type: CoreBlock
+name: Super Serpulo Core
+category: effect
+
+size: 5
+health: 8000/*----99999999----*/
+
+unloadable: true
+hasItems: true 
+itemCapacity: 16000/*----1000000----*/
+canOverdrive: true
+
+thrusterLength: 10
+
+unitType: btrident
+unitCapModifier: 30
+
+buildTime: 0
+requirements: [
+]
+research: core-shard

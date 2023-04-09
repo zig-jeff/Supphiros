@@ -1,0 +1,19 @@
+type: BaseShield
+name: Super Shield
+category: effect
+
+size: 3
+health: 4200
+
+liquidCapacity: 30
+rebuildable: true
+
+hasPower: true
+smoothRadius: 300
+radius: 300
+
+consumes: {
+}
+requirements: [
+]
+research: shield

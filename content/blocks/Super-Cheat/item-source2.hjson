@@ -1,0 +1,12 @@
+type: ItemSource
+name: Super Item Source
+category: distribution
+
+health: 2000
+
+itemsPerSecond: 500
+
+buildTime: 0
+requirements: [
+]
+research: core

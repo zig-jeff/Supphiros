@@ -1,0 +1,17 @@
+type: Wall
+name: Super Wall x1
+category: defense
+
+size: 1
+health: 8400/*----99999999----*/
+
+lightningChance: 0.4/*----120----*/
+lightningDamage: 400/*----99999999----*/
+lightningLength: 9/*----250----*/
+chanceDeflect: 40/*----120----*/
+absorbLasers: true
+
+requirements: [
+]
+research: wall
+buildCostMultiplier: 0.0001

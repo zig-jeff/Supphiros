@@ -1,0 +1,18 @@
+type: LightBlock
+/*illuminator*/
+name: Light Radar
+category: effect
+size: 1
+health: 2000
+absorbLasers: true
+brightness: 1
+radius: 2000
+buildVisibility: lightingOnly
+buildCostMultiplier: 0.0001
+
+consumes: {
+}
+requirements: [
+]
+research: wall
+

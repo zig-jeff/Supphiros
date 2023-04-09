@@ -1,0 +1,10 @@
+type: LiquidSource
+name: Super Liquid Source
+category: liquid
+
+health: 2000
+
+buildTime: 0
+requirements: [
+]
+research: item-source2

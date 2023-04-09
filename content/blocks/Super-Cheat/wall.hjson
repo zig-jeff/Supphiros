@@ -1,0 +1,17 @@
+type: Wall
+name: Super Wall x4
+category: defense
+
+size: 2
+health: 33600/*----99999999----*/
+
+lightningChance: 0.6/*----120----*/
+lightningDamage: 600/*----99999999----*/
+lightningLength: 12/*----250----*/
+chanceDeflect: 60/*----120----*/
+absorbLasers: true
+
+requirements: [
+]
+research: payload-source2
+buildCostMultiplier: 0.0001

@@ -1,0 +1,17 @@
+type: OverdriveProjector
+name: Super Overdrive
+category: effect
+
+size: 3
+health: 2400/*----99999999----*/
+
+speedBoost: 80/*----126----*/
+speedBoostPhase: 100/*----125----*/
+range: 250
+phaseRangeBoost: 50
+
+consumes: {
+}
+requirements: [
+]
+research: wall

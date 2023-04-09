@@ -1,0 +1,22 @@
+type: CoreBlock
+name: 4x4 Core
+category: effect
+
+size: 4
+health: 6000
+
+unloadable: true
+hasItems: true
+itemCapacity: 12000
+canOverdrive: true
+
+thrusterLength: 8.5
+
+unitType: btrident
+unitCapModifier: 24
+
+buildTime: 0
+requirements: [
+]
+
+research: core-shard

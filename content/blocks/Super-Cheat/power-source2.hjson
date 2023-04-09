@@ -1,0 +1,13 @@
+type: PowerSource
+name: Super Power Source
+category: power
+
+health: 2000
+
+laserRange: 30
+maxNodes: 64
+
+buildTime: 0
+requirements: [
+]
+research: item-source2
