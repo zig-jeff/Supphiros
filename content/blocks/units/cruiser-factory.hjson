@@ -1,0 +1,76 @@
+type: UnitFactory
+name: cruiser-factory
+category: units
+
+size: 3
+health: 450
+regionSuffix: "-dark"
+itemCapacity: 4040
+
+plans: [
+    {
+        unit: ddagger
+        requirements: []
+        time: 260
+    }
+    {
+        unit: ekite
+        requirements: []
+        time: 280
+    }
+    {
+        unit: fstealth
+        requirements: []
+        time: 280
+    }
+    {
+        unit: bxbird
+        requirements: []
+        time: 290
+    }
+    {
+        unit: btrxblue
+        requirements: []
+        time: 290
+    }
+    {
+        unit: btrxtrsp
+        requirements: []
+        time: 290
+    }
+    {
+        unit: tankus
+        requirements: []
+        time: 540
+    }
+    {
+        unit: zstarkai
+        requirements: []
+        time: 560
+    }
+    {
+        unit: charvon
+        requirements: []
+        time: 320
+    }
+    {
+        unit: crepair
+        requirements: []
+        time: 320
+    }
+    {
+        unit: cwisp
+        requirements: []
+        time: 320
+    }
+    {
+        unit: bxkill
+        requirements: []
+        time: 160
+    }
+]
+
+consumes: {}
+requirements: []
+research: core - bastion
+/*research: core-shard*/
