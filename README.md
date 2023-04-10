@@ -13,7 +13,7 @@ cheat blocks from super-cheat by Evo04Taser.
 
 some turret and Units from Sapphirium by Snake.
 
-some blocks and Units from many other MOD.
+some blocks and Units from many other MODs.
 
 edit Code, draw sprites and add ideas by zig-jeff.
 
