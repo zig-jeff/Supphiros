@@ -1,0 +1,92 @@
+type: flying
+name: btrident
+flying: true
+
+envDisabled: 0
+
+coreUnitDock: true
+controller: BuilderAI
+isEnemy: false
+targetPriority: -2
+lowAltitude: false
+targetable: false
+hittable: false
+
+health: 4500000
+armor: 3
+
+mineRange: 120
+buildRange: 760
+
+speed: 11 /*----1.35----*/
+rotateSpeed: 8
+drag: 0.08
+accel: 0.08
+hitSize: 12
+
+buildSpeed: 4 /*----1.5----*/
+buildBeamOffset: 8
+mineWalls: true
+mineFloor: true
+mineHardnessScaling: true
+mineSpeed: 9
+mineTier: 5 /*----3----*/
+
+itemCapacity: 210 /*----110----*/
+/*payloadCapacity: 2f - 2f - tilesize - tilesize*/
+/*pickupUnits: false*/
+/*vulnerableWithPayloads: true*/
+
+drawEngines: false
+engineSize: 0
+
+
+weapons: [
+    {
+    type: RepairBeamWeapon
+    mirror: false
+    top: false
+    x: 0
+    y: 0
+    shootY: 4
+    beamWidth: 0.5
+
+    /*aimDst: 0*/
+    repairSpeed: 2.1
+    /*fractionRepairSpeed: 0.03*/
+
+    targetUnits: true
+    targetBuildings: true
+    autoTarget: true
+    /*controllable: true*/
+    /*laserColor: Pal.accent*/
+    /*healColor: Pal.accent*/
+
+    bullet: {
+        type: BulletType
+        maxRange: 320
+        }
+
+    }
+]
+
+parts: [
+    {
+    type: HoverPart
+    x: -4
+    y: -5
+    layerOffset: -0.05
+    mirror: true
+    color: 84f491
+    stroke: 2
+    }
+    {
+    type: HoverPart
+    x: -4.5
+    y: 3.5
+    layerOffset: -0.05
+    mirror: true
+    color: 84f491
+    stroke: 2
+    }
+]

@@ -1,0 +1,33 @@
+type: flying
+name: btrxtrsp
+flying: true
+
+envDisabled: 0
+
+controller: BuilderAI
+isEnemy: false
+targetPriority: -2
+lowAltitude: false
+targetable: false
+hittable: false
+
+health: 4500000
+armor: 3
+
+buildRange: 760
+
+speed: 11
+rotateSpeed: 8
+drag: 0.08
+accel: 0.08
+hitSize: 12
+
+buildSpeed: 4
+buildBeamOffset: 8
+
+itemCapacity: 210
+
+drawEngines: false
+engineSize: 0
+
+research: charvon

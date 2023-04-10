@@ -1,0 +1,174 @@
+type: flying
+name: ekite
+flying: true
+
+envDisabled: 0
+
+controller: FlyingAI
+
+health: 18080
+armor: 34
+
+range: 460
+speed: 3.2
+rotateSpeed: 1.4
+rotateShooting: true
+drag: 0.04
+accel: 0.03
+hitSize: 12
+
+engineSize: 3
+engineOffset: 9.5
+
+weapons: [
+    {
+        /*Missile*/
+        mirror: false
+        rotate: false
+        shootCone: 65
+        y: -2
+        x: 0
+        reload: 14
+        inaccuracy: 5
+        
+        shootSound: missileSmall
+        shoot: {
+            type: ShootPattern
+            shots: 1
+        }
+
+        bullet: {
+            type: MissileBulletType
+            width: 5
+            height: 11
+
+            MaxRange: 460
+            drag: -0.003
+            homingRange: 60
+
+            lifetime: 120
+            speed: 4
+            damage: 420
+            splashDamage: 232
+            splashDamageRadius: 52
+
+            trailEffect: missileTrail
+            /*trailWidth: 20*/
+            /*trailLength: 12*/
+            /*trailColor: ffffff*/
+
+            hitEffect: blastExplosion
+            despawnEffect: massiveExplosion
+            /*----blastExplosion----*/
+            keepVelocity: false
+            weaveScale: 9
+            weaveMag: 1
+            weaveRandom: true
+            buildingDamageMultiplier: 0.2
+        }
+    }
+
+    {
+        name: ekite-wing
+        mirror: true
+        rotate: false
+        shootCone: 0.1
+        alternate: false
+        y: 4
+        x: 9
+        reload: 28
+        recoil: 1
+        inaccuracy: 0
+
+        pierce: true
+        pierceBuilding: true
+        absorbable: false
+        reflectable: false
+
+        shootSound: blaster
+        /*plasmaboom*/
+
+        shoot: {
+            firstShotDelay: 4
+        }
+
+        bullet: {
+            type: BasicBulletType
+            width: 20
+            height: 6
+
+            lifetime: 142
+            speed: 1.4
+            damage: 730
+            splashDamage: 1280
+            splashDamageRadius: 40
+            buildingDamageMultiplier: 0.2
+
+            collides: true
+            shootEffect: none
+            hitEffect: massiveExplosion
+            /*----blastExplosion----*/
+
+            despawnEffect: {
+                type: MultiEffect
+                effects: [
+                {
+                    type: WaveEffect
+                    colorFrom: ffffff
+                    colorTo: ffd27e
+                    lightColor: ffd27e
+                    sizeFrom: 25
+                    sizeTo: 35
+                    sides: 0
+                    lifetime: 40
+                    strokeFrom: 0
+                    strokeTo: 1
+                }
+                {
+                    type: WaveEffect
+                    colorFrom: ffffff
+                    colorTo: ffd27e
+                    lightColor: ffd27e
+                    sizeFrom: 36
+                    sizeTo: 30
+                    sides: 0
+                    lifetime: 40
+                    strokeFrom: 0
+                    strokeTo: 1
+                }
+                ]
+            }
+        }
+    }
+]
+
+abilities: [
+    {
+        type: EnergyFieldAbility
+        reload: 20 /*----80----*/
+        range: 86 /*----150----*/
+        damage: 216
+        maxTargets: 16
+        healPercent: 0.5
+        sectors: 4
+        sectorRad: 0.14
+        color: e8eeff
+        /*green----84f491*/
+        rotateSpeed: 0.5
+        blinkScl: 5
+        shootSound: spark
+        status: electrified
+    }
+
+    {
+        type: MoveLightningAbility
+        damage: 250
+        chance: 0.09
+        length: 19
+        minSpeed: 1
+        maxSpeed: 2
+        color: a9d8ff
+    }
+]
+
+research: ddagger

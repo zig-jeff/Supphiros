@@ -1,0 +1,26 @@
+type: flying
+name: charvon
+flying: true
+
+envDisabled: 0
+
+controller: MinerAI
+defaultController: MinerAI
+isEnemy: false
+
+health: 380
+armor: 2
+
+speed: 2.4
+rotateSpeed: 1.9
+drag: 0.06
+accel: 0.12
+
+mineSpeed: 11/*----3.5----*/
+mineTier: 99
+mineWalls: true
+mineFloor: true
+
+itemCapacity: 280/*----25----*/
+
+research: cruiser-factory

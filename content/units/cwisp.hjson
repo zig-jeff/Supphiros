@@ -1,0 +1,83 @@
+type: flying
+name: cwisp
+flying: true
+
+envDisabled: 0
+
+defaultController: DefenderAI
+
+health: 540
+
+range: 210 /*64*/
+
+speed: 2
+drag: 0.05
+accel: 0.1
+hitSize: 12
+
+canAttack: false
+faceTarget: false
+targetAir: false
+targetGround: false
+
+itemCapacity: 0
+
+engineSize: 2
+engineOffset: 6.5
+
+immunities: [cwisped]
+
+weapons: [
+    {
+    type: RepairBeamWeapon
+    x: 6
+    y: 1
+    mirror: true
+    beamWidth: 0.5
+    repairSpeed: 8 /*0.8*/
+    recentDamageMultiplier: 1
+    /*rotate: true*/
+    bullet: {
+        type: BulletType
+        maxRange: 360 /*96*/
+    }
+    }
+]
+
+abilities: [{
+    type: StatusFieldAbility
+
+    effect: cwisped
+
+    duration: 900
+    range: 128
+    reload: 600
+    activeEffect: {
+        type: MultiEffect
+        effects: [
+        {
+            type: WaveEffect
+            colorFrom: ffffff
+            colorTo: 84f491
+            sizeFrom: 128
+            sizeTo: 128
+            interp: pow3Out
+            lifetime: 120
+            strokeFrom: 3
+        }
+        {
+            type: WaveEffect
+            colorFrom: ffffff
+            colorTo: 84f491
+            sizeFrom: 0
+            sizeTo: 128
+            interp: pow3Out
+            sizeInterp: pow5In
+            lifetime: 120
+            strokeFrom: 5
+        }
+        ]
+    }
+}]
+
+research: charvon

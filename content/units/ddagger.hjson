@@ -1,0 +1,52 @@
+type: flying
+name: ddagger
+flying: true
+
+envDisabled: 0
+
+controller: FlyingAI
+
+health: 8800
+armor: 19 /*----3000----*/
+
+range: 240
+speed: 2
+rotateSpeed: 3.4
+hitSize: 8
+
+weapons: [{
+    name: ddagger-wing
+    mirror: true
+    top: false
+    x: 4
+    y: 2
+
+    reload: 13
+    recoil: 2
+    ejectEffect: casing1
+    
+    shoot: {
+        shots: 4
+        shotDelay: 2
+    }
+    
+    bullet: {
+        type: BasicBulletType
+        lifetime: 88 /*----160----*/
+        speed: 3
+        
+        damage: 12 /*----80----*/
+        collides: true
+
+        fragBullets: 10
+        fragBullet: {
+            type: BasicBulletType
+            lifetime: 5
+            damage: 8
+            speed: 6
+            collides: true
+        }
+    }
+}]
+
+research: cruiser-factory

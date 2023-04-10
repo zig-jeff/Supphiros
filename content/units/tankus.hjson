@@ -1,0 +1,138 @@
+type: legs
+name: tankus
+flying: false
+
+envDisabled: 0
+
+controller: GroundAI
+
+health: 36200
+armor: 24
+
+range: 940
+speed: 0.65
+rotateSpeed: 2
+drag: 0.1
+hitSize: 21
+hovering: true
+
+/*rotateMoveFirst: true*/
+/*hovering: true*/
+
+legCount: 6
+legLength: 9
+legForwardScl: 0.6
+legMoveSpace: 1.4
+legContinuousMove: true
+legBaseOffset: 2
+legSplashDamage: 260
+legSplashRange: 50
+
+/*shadowElevation: 0.2*/
+/*groundLayer: Layer.legUnit-1*/
+
+itemCapacity: 90
+
+weapons: [
+    {
+        name: tankus-wing
+        top: false
+        outlineColor: 00000000
+        x: 6
+        y: 2.5
+        reload: 75 /*----100----*/
+        alternate: true
+        rotate: false
+        recoil: 1.5
+        shootY: 8
+
+        shootSound: laser
+
+        bullet: {
+            type: MissileBulletType
+            width: 9 /*----4----*/
+            height: 18
+            knockback: 1
+            recoil: 0.4 /*----4----*/
+
+            lifetime: 51
+            speed: 6
+            /*51x6-306*/
+            damage: 650
+            splashDamage: 380
+            splashDamageRadius: 100
+
+            shrinkY: 0.1
+
+            shootEffect: shootBig
+            backColor: c27ddd
+            frontColor: edbdff
+            smokeEffect: shootBigSmoke
+            trailEffect: none
+
+            collidesAir: true
+            collidesGround: true
+
+            hitEffect: {
+                type: ExplosionEffect
+                lifetime: 80
+                waveStroke: 4
+                waveRadBase: 3
+                waveLife: 60
+                waveRad: 100
+                waveColor: a78fff
+                smokeColor: 3e3 e3e
+                sparkColor: a78fff
+                sparks: 30
+                smokes: 45
+                sparkRad: 100
+                smokeSize: 4
+                smokeSizeBase: 4
+                smokeRad: 100
+                sparkStroke: 4
+                sparkLen: 4
+            }
+
+            despawnEffect: {
+                type: ExplosionEffect
+                lifetime: 80
+                waveStroke: 4
+                waveRadBase: 3
+                waveLife: 60
+                waveRad: 100
+                waveColor: a78fff
+                smokeColor: 3e3 e3e
+                sparkColor: a78fff
+                sparks: 30
+                smokes: 45
+                sparkRad: 100
+                smokeSize: 4
+                smokeSizeBase: 4
+                smokeRad: 100
+                sparkStroke: 4
+                sparkLen: 4
+            }
+        }
+    }
+
+    {
+        x: 0
+        y: 5
+        shootY: 5
+        reload: 360 /*----100----*/
+
+        MaxRange: 950
+
+        shootSound: missileLaunch
+
+        bullet: {
+            type: MissileBulletType
+            lifetime: 0
+            damage: 0
+            speed: 0
+            spawnUnit: tankus-drone
+        }
+    }
+]
+
+research: cruiser-factory

@@ -1,0 +1,41 @@
+type: flying
+name: zxkill
+flying: true
+
+envDisabled: 0
+
+controller: FlyingAI
+
+health: 1500000
+armor: 16
+
+speed: 8
+rotateSpeed: 3.4
+hitSize: 8
+
+drawEngines: false
+engineSize: 0
+
+/*immunities:*/
+
+abilities: [{
+    type: RepairFieldAbility
+    range: 120
+    amount: -9999
+    reload: 40
+
+    healEffect: none
+
+    activeEffect: [{
+        type: WaveEffect
+        colorFrom: ea68a2
+        colorTo: ea68a2
+        lightColor: ea68a2
+        sizeFrom: 100
+        sizeTo: 120
+        sides: 6
+        lifetime: 40
+    }]
+}]
+
+research: cruiser-factory

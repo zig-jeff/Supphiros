@@ -1,0 +1,219 @@
+type: flying
+name: fstealth
+flying: true
+
+envDisabled: 0
+
+controller: FlyingAI
+
+health: 4600
+armor: 14
+
+range: 780
+speed: 1.6
+rotateSpeed: 1.6
+hitSize: 16
+
+weapons: [{
+    /*name: misiel*/
+    mirror: true
+    /*top: false*/
+    /*shootCone: 15*/
+    y: 7
+    x: 5.5
+
+    reload: 82
+    recoil: 0
+    shootSound: missileLarge
+
+    /*shoot: {
+    firstShotDelay: 14
+    ShotDelay: 9
+    }*/
+
+    bullet: {
+        type: MissileBulletType
+        width: 8
+        height: 20
+
+        maxRange: 820
+
+        lifetime: 60
+        speed: 4
+        damage: 1250
+
+        inaccuracy: 0.2
+        backColor: a9d8ff
+        frontColor: ffffff
+
+        pierce: true
+        pierceCap: 1
+        pierceBuilding: true
+        buildingDamageMultiplier: 0.5
+        knockback: 1
+        hitSound: flame2
+
+        shootEffect: {
+            type: MultiEffect
+            effects: [lancerLaserCharge, {
+                type: WaveEffect
+                sides: 0
+                sizeFrom: 0
+                sizeTo: 5
+                strokeFrom: 26 /*3*/
+                strokeTo: 0
+                lifetime: 20 /*20*/
+                colorFrom: a9d8ff
+                colorTo: ffffff
+            }]
+        }
+
+        hitEffect: {
+            type: WaveEffect
+            sides: 0
+            sizeFrom: 0
+            sizeTo: 16 /*5*/
+            strokeFrom: 3
+            strokeTo: 0
+            lifetime: 20
+            colorFrom: a9d8ff
+            colorTo: ffffff
+        }
+
+        despawnEffect: {
+            type: WaveEffect
+            sides: 0
+            sizeFrom: 0
+            sizeTo: 5
+            strokeFrom: 3
+            strokeTo: 0
+            lifetime: 20
+            colorFrom: a9d8ff
+            colorTo: ffffff
+        }
+
+        fragBullets: 2
+        fragSpread: 9
+        fragRandomSpread: 11
+        fragBullet: {
+            type: MissileBulletType
+            width: 6
+            height: 15
+
+            maxRange: 820
+
+            lifetime: 120
+            speed: 2.4
+            damage: 980
+
+            inaccuracy: 0.1
+            weaveMag: 1
+            weaveScale: 1
+            buildingDamageMultiplier: 0.25
+            backColor: a9d8ff
+            frontColor: ffffff
+
+            hitSound: laser
+
+            pierce: true
+            pierceCap: 1
+            pierceBuilding: true
+            knockback: 1
+
+            hitEffect: {
+                type: WaveEffect
+                sides: 0
+                sizeFrom: 0
+                sizeTo: 12
+                strokeFrom: 3
+                strokeTo: 0
+                lifetime: 20
+                colorFrom: a9d8ff
+                colorTo: ffffff
+            }
+
+            despawnEffect: {
+                type: WaveEffect
+                sides: 0
+                sizeFrom: 0
+                sizeTo: 5
+                strokeFrom: 3
+                strokeTo: 0
+                lifetime: 20
+                colorFrom: a9d8ff
+                colorTo: ffffff
+            }
+
+            fragBullets: 4
+            fragSpread: 11
+            fragAngle: 36 /*----*/
+            fragRandomSpread: 13
+            fragBullet: {
+                type: MissileBulletType
+                width: 4
+                height: 8
+
+                maxRange: 820
+                
+                lifetime: 180
+                speed: 5
+                rotateSpeed: 9
+                damage: 660
+                splashDamage: 440
+                splashDamageRadius: 48
+
+                inaccuracy: 0
+                buildingDamageMultiplier: 0.1
+                backColor: a9d8ff
+                frontColor: ffffff
+
+                hitSound: laser
+
+                pierce: true
+                pierceBuilding: true
+                pierceCap: 1
+                knockback: 1
+                weaveScale: 4
+                weaveMag: 2
+
+                hitEffect: {
+                    type: WaveEffect
+                    sides: 0
+                    sizeFrom: 0
+                    sizeTo: 8
+                    strokeFrom: 3
+                    strokeTo: 0
+                    lifetime: 20
+                    colorFrom: a9d8ff
+                    colorTo: ffffff
+                }
+
+                despawnEffect: {
+                    type: WaveEffect
+                    sides: 0
+                    sizeFrom: 0
+                    sizeTo: 5
+                    strokeFrom: 3
+                    strokeTo: 0
+                    lifetime: 20
+                    colorFrom: a9d8ff
+                    colorTo: ffffff
+                }
+            }
+        }
+    }
+}]
+
+engines: [{
+    x: -2.8
+    y: -7.8
+    rotation: 270
+    radius: 3.4
+} {
+    x: 2.8
+    y: -7.8
+    rotation: 270
+    radius: 3.4
+}]
+
+research: ddagger

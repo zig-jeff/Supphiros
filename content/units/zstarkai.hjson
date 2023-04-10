@@ -1,0 +1,841 @@
+type: payload
+name: zstarkai
+flying: true
+
+envDisabled: 0
+
+commandLimit: 8
+
+health: 24800
+armor: 54
+
+range: 480
+speed: 0.9
+rotateSpeed: 0.6
+hitSize: 48
+omniMovement: false
+
+buildSpeed: 2.25
+mineSpeed: 7
+mineTier: 5
+
+targetGround: true
+targetAir: true
+
+lowAltitude: true
+
+outlineColor: 00000000
+
+payloadCapacity: 600
+itemCapacity: 280
+
+weapons: [
+    {
+        name: zstarkai-wing1
+        mirror: false
+        rotate: true
+        baseRotation: 0
+        rotationLimit: 120
+        rotateSpeed: 2.6
+        y: 76
+        x: 0
+
+        reload: 22
+        shootY: 9
+        shootSound: sap
+        shoot: {
+            shots: 3
+            shotDelay: 4.2
+        }
+
+        bullet: {
+            type: BasicBulletType
+            sprite: white
+            width: 1
+            height: 17
+            maxRange: 480
+
+            shootEffect: none
+
+            lifetime: 94
+            speed: 4.6
+            damage: 96
+            splashDamage: 72
+            splashDamageRadius: 32
+
+            absorbable: false
+            reflectable: false
+
+            frontColor: fff799
+            backColor: facd89
+            /*trailColor: ffff88*/
+        }
+    }
+
+
+
+
+    {
+        name: zstarkai-wing1
+        mirror: false
+        rotate: true
+        baseRotation: 270
+        rotationLimit: 120
+        rotateSpeed: 2.6
+        y: 0
+        x: 20
+        reload: 22
+        shootY: 9
+        shootSound: sap
+        shoot: {
+            shots: 3
+            shotDelay: 4.2
+        }
+        bullet: {
+            type: BasicBulletType
+            sprite: white
+            width: 1
+            height: 17
+            maxRange: 480
+            shootEffect: none
+            lifetime: 94
+            speed: 4.6
+            damage: 96
+            splashDamage: 72
+            splashDamageRadius: 32
+            absorbable: false
+            reflectable: false
+            frontColor: fff799
+            backColor: facd89
+        }
+    }
+
+    {
+        name: zstarkai-wing1
+        mirror: false
+        rotate: true
+        baseRotation: 280
+        rotationLimit: 120
+        rotateSpeed: 2.6
+        y: 14
+        x: 20
+        reload: 22
+        shootY: 9
+        shootSound: sap
+        shoot: {
+            shots: 3
+            shotDelay: 4.2
+        }
+        bullet: {
+            type: BasicBulletType
+            sprite: white
+            width: 1
+            height: 17
+            maxRange: 480
+            shootEffect: none
+            lifetime: 94
+            speed: 4.6
+            damage: 96
+            splashDamage: 72
+            splashDamageRadius: 32
+            absorbable: false
+            reflectable: false
+            frontColor: fff799
+            backColor: facd89
+        }
+    }
+
+    {
+        name: zstarkai-wing1
+        mirror: false
+        rotate: true
+        baseRotation: 290
+        rotationLimit: 120
+        rotateSpeed: 2.6
+        y: 28
+        x: 10
+        reload: 22
+        shootY: 9
+        shootSound: sap
+        shoot: {
+            shots: 3
+            shotDelay: 4.2
+        }
+        bullet: {
+            type: BasicBulletType
+            sprite: white
+            width: 1
+            height: 17
+            maxRange: 480
+            shootEffect: none
+            lifetime: 94
+            speed: 4.6
+            damage: 96
+            splashDamage: 72
+            splashDamageRadius: 32
+            absorbable: false
+            reflectable: false
+            frontColor: fff799
+            backColor: facd89
+        }
+    }
+
+    {
+        name: zstarkai-wing1
+        mirror: false
+        rotate: true
+        baseRotation: 300
+        rotationLimit: 120
+        rotateSpeed: 2.6
+        y: 42
+        x: 10
+        reload: 22
+        shootY: 9
+        shootSound: sap
+        shoot: {
+            shots: 3
+            shotDelay: 4.2
+        }
+        bullet: {
+            type: BasicBulletType
+            sprite: white
+            width: 1
+            height: 17
+            maxRange: 480
+            shootEffect: none
+            lifetime: 94
+            speed: 4.6
+            damage: 96
+            splashDamage: 72
+            splashDamageRadius: 32
+            absorbable: false
+            reflectable: false
+            frontColor: fff799
+            backColor: facd89
+        }
+    }
+
+    {
+        name: zstarkai-wing1
+        mirror: false
+        rotate: true
+        baseRotation: 310
+        rotationLimit: 120
+        rotateSpeed: 2.6
+        y: 56
+        x: 10
+        reload: 22
+        shootY: 9
+        shootSound: sap
+        shoot: {
+            shots: 3
+            shotDelay: 4.2
+        }
+        bullet: {
+            type: BasicBulletType
+            sprite: white
+            width: 1
+            height: 17
+            maxRange: 480
+            shootEffect: none
+            lifetime: 94
+            speed: 4.6
+            damage: 96
+            splashDamage: 72
+            splashDamageRadius: 32
+            absorbable: false
+            reflectable: false
+            frontColor: fff799
+            backColor: facd89
+        }
+    }
+
+
+
+
+    {
+        name: zstarkai-wing1
+        mirror: false
+        rotate: true
+        baseRotation: 90
+        rotationLimit: 120
+        rotateSpeed: 2.6
+        y: 0
+        x: -20
+
+        reload: 22
+        shootY: 9
+        shootSound: sap
+        shoot: {
+            shots: 3
+            shotDelay: 4.2
+        }
+
+        bullet: {
+            type: BasicBulletType
+            sprite: white
+            width: 1
+            height: 17
+            maxRange: 480
+
+            shootEffect: none
+
+            lifetime: 94
+            speed: 4.6
+            damage: 96
+            splashDamage: 72
+            splashDamageRadius: 32
+
+            absorbable: false
+            reflectable: false
+
+            frontColor: fff799
+            backColor: facd89
+            /*trailColor: ffff88*/
+        }
+    }
+
+    {
+        name: zstarkai-wing1
+        mirror: false
+        rotate: true
+        baseRotation: 80
+        rotationLimit: 120
+        rotateSpeed: 2.6
+        y: 14
+        x: -20
+        reload: 22
+        shootY: 9
+        shootSound: sap
+        shoot: {
+            shots: 3
+            shotDelay: 4.2
+        }
+        bullet: {
+            type: BasicBulletType
+            sprite: white
+            width: 1
+            height: 17
+            maxRange: 480
+            shootEffect: none
+            lifetime: 94
+            speed: 4.6
+            damage: 96
+            splashDamage: 72
+            splashDamageRadius: 32
+            absorbable: false
+            reflectable: false
+            frontColor: fff799
+            backColor: facd89
+        }
+    }
+
+    {
+        name: zstarkai-wing1
+        mirror: false
+        rotate: true
+        baseRotation: 70
+        rotationLimit: 120
+        rotateSpeed: 2.6
+        y: 28
+        x: -10
+        reload: 22
+        shootY: 9
+        shootSound: sap
+        shoot: {
+            shots: 3
+            shotDelay: 4.2
+        }
+        bullet: {
+            type: BasicBulletType
+            sprite: white
+            width: 1
+            height: 17
+            maxRange: 480
+            shootEffect: none
+            lifetime: 94
+            speed: 4.6
+            damage: 96
+            splashDamage: 72
+            splashDamageRadius: 32
+            absorbable: false
+            reflectable: false
+            frontColor: fff799
+            backColor: facd89
+        }
+    }
+
+    {
+        name: zstarkai-wing1
+        mirror: false
+        rotate: true
+        baseRotation: 60
+        rotationLimit: 120
+        rotateSpeed: 2.6
+        y: 42
+        x: -10
+        reload: 22
+        shootY: 9
+        shootSound: sap
+        shoot: {
+            shots: 3
+            shotDelay: 4.2
+        }
+        bullet: {
+            type: BasicBulletType
+            sprite: white
+            width: 1
+            height: 17
+            maxRange: 480
+            shootEffect: none
+            lifetime: 94
+            speed: 4.6
+            damage: 96
+            splashDamage: 72
+            splashDamageRadius: 32
+            absorbable: false
+            reflectable: false
+            frontColor: fff799
+            backColor: facd89
+        }
+    }
+
+    {
+        name: zstarkai-wing1
+        mirror: false
+        rotate: true
+        baseRotation: 50
+        rotationLimit: 120
+        rotateSpeed: 2.6
+        y: 56
+        x: -10
+        reload: 22
+        shootY: 9
+        shootSound: sap
+        shoot: {
+            shots: 3
+            shotDelay: 4.2
+        }
+        bullet: {
+            type: BasicBulletType
+            sprite: white
+            width: 1
+            height: 17
+            maxRange: 480
+            shootEffect: none
+            lifetime: 94
+            speed: 4.6
+            damage: 96
+            splashDamage: 72
+            splashDamageRadius: 32
+            absorbable: false
+            reflectable: false
+            frontColor: fff799
+            backColor: facd89
+        }
+    }
+
+
+
+
+    {
+        name: zstarkai-wing1
+        mirror: false
+        rotate: true
+        baseRotation: 240
+        rotationLimit: 120
+        rotateSpeed: 2.6
+        y: -12
+        x: 32
+        reload: 22
+        shootY: 9
+        shootSound: sap
+        shoot: {
+            shots: 3
+            shotDelay: 4.2
+        }
+        bullet: {
+            type: BasicBulletType
+            sprite: white
+            width: 1
+            height: 17
+            maxRange: 480
+            shootEffect: none
+            lifetime: 94
+            speed: 4.6
+            damage: 96
+            splashDamage: 72
+            splashDamageRadius: 32
+            absorbable: false
+            reflectable: false
+            frontColor: fff799
+            backColor: facd89
+        }
+    }
+
+    {
+        name: zstarkai-wing1
+        mirror: false
+        rotate: true
+        baseRotation: 220
+        rotationLimit: 120
+        rotateSpeed: 2.6
+        y: -28
+        x: 32
+        reload: 22
+        shootY: 9
+        shootSound: sap
+        shoot: {
+            shots: 3
+            shotDelay: 4.2
+        }
+        bullet: {
+            type: BasicBulletType
+            sprite: white
+            width: 1
+            height: 17
+            maxRange: 480
+            shootEffect: none
+            lifetime: 94
+            speed: 4.6
+            damage: 96
+            splashDamage: 72
+            splashDamageRadius: 32
+            absorbable: false
+            reflectable: false
+            frontColor: fff799
+            backColor: facd89
+        }
+    }
+
+    {
+        name: zstarkai-wing1
+        mirror: false
+        rotate: true
+        baseRotation: 200
+        rotationLimit: 120
+        rotateSpeed: 2.6
+        y: -42
+        x: 40
+        reload: 22
+        shootY: 9
+        shootSound: sap
+        shoot: {
+            shots: 3
+            shotDelay: 4.2
+        }
+        bullet: {
+            type: BasicBulletType
+            sprite: white
+            width: 1
+            height: 17
+            maxRange: 480
+            shootEffect: none
+            lifetime: 94
+            speed: 4.6
+            damage: 96
+            splashDamage: 72
+            splashDamageRadius: 32
+            absorbable: false
+            reflectable: false
+            frontColor: fff799
+            backColor: facd89
+        }
+    }
+
+    {
+        name: zstarkai-wing1
+        mirror: false
+        rotate: true
+        baseRotation: 180
+        rotationLimit: 120
+        rotateSpeed: 2.6
+        y: -58
+        x: 40
+        reload: 22
+        shootY: 9
+        shootSound: sap
+        shoot: {
+            shots: 3
+            shotDelay: 4.2
+        }
+        bullet: {
+            type: BasicBulletType
+            sprite: white
+            width: 1
+            height: 17
+            maxRange: 480
+            shootEffect: none
+            lifetime: 94
+            speed: 4.6
+            damage: 96
+            splashDamage: 72
+            splashDamageRadius: 32
+            absorbable: false
+            reflectable: false
+            frontColor: fff799
+            backColor: facd89
+        }
+    }
+
+
+
+
+    {
+        name: zstarkai-wing1
+        mirror: false
+        rotate: true
+        baseRotation: 120
+        rotationLimit: 120
+        rotateSpeed: 2.6
+        y: -12
+        x: -32
+        reload: 22
+        shootY: 9
+        shootSound: sap
+        shoot: {
+            shots: 3
+            shotDelay: 4.2
+        }
+        bullet: {
+            type: BasicBulletType
+            sprite: white
+            width: 1
+            height: 17
+            maxRange: 480
+            shootEffect: none
+            lifetime: 94
+            speed: 4.6
+            damage: 96
+            splashDamage: 72
+            splashDamageRadius: 32
+            absorbable: false
+            reflectable: false
+            frontColor: fff799
+            backColor: facd89
+        }
+    }
+
+    {
+        name: zstarkai-wing1
+        mirror: false
+        rotate: true
+        baseRotation: 140
+        rotationLimit: 120
+        rotateSpeed: 2.6
+        y: -28
+        x: -32
+        reload: 22
+        shootY: 9
+        shootSound: sap
+        shoot: {
+            shots: 3
+            shotDelay: 4.2
+        }
+        bullet: {
+            type: BasicBulletType
+            sprite: white
+            width: 1
+            height: 17
+            maxRange: 480
+            shootEffect: none
+            lifetime: 94
+            speed: 4.6
+            damage: 96
+            splashDamage: 72
+            splashDamageRadius: 32
+            absorbable: false
+            reflectable: false
+            frontColor: fff799
+            backColor: facd89
+        }
+    }
+
+    {
+        name: zstarkai-wing1
+        mirror: false
+        rotate: true
+        baseRotation: 160
+        rotationLimit: 120
+        rotateSpeed: 2.6
+        y: -42
+        x: -40
+        reload: 22
+        shootY: 9
+        shootSound: sap
+        shoot: {
+            shots: 3
+            shotDelay: 4.2
+        }
+        bullet: {
+            type: BasicBulletType
+            sprite: white
+            width: 1
+            height: 17
+            maxRange: 480
+            shootEffect: none
+            lifetime: 94
+            speed: 4.6
+            damage: 96
+            splashDamage: 72
+            splashDamageRadius: 32
+            absorbable: false
+            reflectable: false
+            frontColor: fff799
+            backColor: facd89
+        }
+    }
+
+    {
+        name: zstarkai-wing1
+        mirror: false
+        rotate: true
+        baseRotation: 180
+        rotationLimit: 120
+        rotateSpeed: 2.6
+        y: -58
+        x: -40
+        reload: 22
+        shootY: 9
+        shootSound: sap
+        shoot: {
+            shots: 3
+            shotDelay: 4.2
+        }
+        bullet: {
+            type: BasicBulletType
+            sprite: white
+            width: 1
+            height: 17
+            maxRange: 480
+            shootEffect: none
+            lifetime: 94
+            speed: 4.6
+            damage: 96
+            splashDamage: 72
+            splashDamageRadius: 32
+            absorbable: false
+            reflectable: false
+            frontColor: fff799
+            backColor: facd89
+        }
+    }
+
+
+
+
+    {
+        /*drone*/
+        mirror: true
+        shootCone: 361
+        x: 46
+        y: -12
+        reload: 260 /*----100----*/
+        /*recoil: 6*/
+
+        MaxRange: 740
+
+        shoot: {
+            shots: 2
+            shotDelay: 16
+        }
+        shootSound: plasmadrop
+        /*conveyor*/
+
+        bullet: {
+            type: MissileBulletType
+            lifetime: 0
+            speed: 0
+            damage: 0
+
+            shootEffect: none
+            weaveScale: 8
+            weaveMag: 2
+            weaveRandom: true
+
+            spawnUnit: zstarkai-drone
+        }
+    }
+
+    {
+        type: RepairBeamWeapon
+        /*name: repair-center*/
+        mirror: true
+        x: 10
+        y: 0
+        shootY: 5
+        beamWidth: 0.5
+
+        repairSpeed: 4 /*----2.5----*/
+
+        bullet: {
+            type: BulletType
+            maxRange: 410 /*----500----*/
+        }
+    }
+]
+
+abilities: [{
+        type: EnergyFieldAbility
+        reload: 40 /*----80----*/
+        range: 210 /*----150----*/
+        damage: 90
+        color: e8eeff
+        /*green----84f491*/
+        maxTargets: 4
+        healPercent: 0.6 /*----0.5----*/
+        sectors: 3
+        sectorRad: 0.2
+        rotateSpeed: 1
+        blinkScl: 5
+        shootSound: spark
+        status: electrified
+    }
+
+    {
+        type: RepairFieldAbility
+        reload: 84
+        range: 200 /*----100----*/
+        color: 84f491
+        amount: 40
+        activeEffect: {
+            type: WaveEffect
+            colorFrom: 84f491
+            colorTo: 84f491
+            sizeFrom: 200
+            sizeTo: 220
+            sides: 0
+            lifetime: 40
+        }
+    }
+]
+
+engines: [
+    {
+        x: -29
+        y: -83
+        radius: 3
+        rotation: 270
+    }
+    {
+        x: 29
+        y: -83
+        radius: 3
+        rotation: 270
+    }
+
+    {
+        x: -45
+        y: -79
+        radius: 3
+        rotation: 270
+    }
+    {
+        x: 45
+        y: -79
+        radius: 3
+        rotation: 270
+    }
+]
+
+research: ddagger
