@@ -1,6 +1,6 @@
 # Supphiros
 
-![Preview1](https://user-images.githubusercontent.com/130205763/230802709-0f5d2357-eea7-40fb-b202-7a39b059df5a.png)
+![Preview1](https://user-images.githubusercontent.com/130205763/230809009-e529c1a8-538c-4bf9-bbbe-1ffa5d0f42b0.png)
 
 
 It's Cheat MOD for V7. Works on Erekir as well.
