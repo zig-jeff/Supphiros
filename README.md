@@ -15,7 +15,7 @@ some turret and Units from Sapphirium by Snake.
 
 some blocks and Units from many other MOD.
 
-edit Code, draw sprites and add ideas by Jeff.
+edit Code, draw sprites and add ideas by zig-jeff.
 
 ## YouTube link.
 test play YouTube link https://youtu.be/wJojDcMEd2E
