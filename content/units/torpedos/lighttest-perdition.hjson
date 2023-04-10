@@ -1,0 +1,42 @@
+type: missile
+name: lighttest-perdition
+template: ErekirUnitType
+
+envDisabled: 0
+
+playerControllable: false
+logicControllable: false
+
+lifetime: 54
+speed: 0
+hoverable: false
+
+targetable: false
+deathSound: none
+deathExplosionEffect: none
+hittable: false
+physics: false
+drawBody: false
+createScorch: false
+hidden: true
+drawMinimap: false
+useUnitCap: false
+
+drawEngines: false
+engineSize: 0
+drawCell: false
+
+abilities: [
+	{
+	type: EnergyFieldAbility
+	range: 210/*480*/
+	reload: 30
+	damage: 75
+	maxTargets: 6
+	healPercent: 0.05
+	sectors: 0
+	status: electrified
+	statusDuration: 30
+	color: 85b0cc
+	}
+]

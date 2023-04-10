@@ -1,0 +1,79 @@
+type: missile
+name: zstarkai-drone
+flying: true
+
+envDisabled: 0
+
+controller: MissileAI
+defaultController: MissileAI
+
+health: 920
+armor: 11
+
+range: 760
+
+lifetime: 8450
+speed: 2.8
+rotateSpeed: 3
+/*drag: 0.07*/
+hitSize: 2
+
+missileAccelTime: 4
+lowAltitude: true
+fogRadius: 10
+hidden: true
+allowedInPayloads: false
+useUnitCap: false
+physics: false
+createWreck: false
+createScorch: false
+
+autoFindTarget: true
+forceMultiTarget: true
+
+engineSize: 1
+engineOffset: 2.5
+
+weapons: [
+    {
+        mirror: false
+        rotate: false
+        shootCone: 12
+        y: 1.4
+        x: 0
+
+        reload: 12
+        shootY: 7
+        shootSound: sap
+
+        shoot: {
+            shots: 2
+            shotDelay: 3
+        }
+
+        bullet: {
+            type: BasicBulletType
+            sprite: white
+            width: 1
+            height: 12
+
+            maxRange: 320
+
+            lifetime: 42 /*----80----*/
+            speed: 4.6
+            damage: 110 /*----180----*/
+            splashDamage: 96 /*----180----*/
+            splashDamageRadius: 32 /*----64----*/
+            
+            shootEffect: none
+            /*pierce: true*/
+            /*pierceBuilding: true*/
+            absorbable: false
+            reflectable: false
+
+            frontColor: ffd4b1
+            backColor: facd89
+            // trailColor: ffff88
+        }
+    }
+]

@@ -1,0 +1,88 @@
+type: missile
+name: bxbird-bird
+flying: true
+
+envDisabled: 0
+
+controller: MissileAI
+defaultController: MissileAI
+autoFindTarget: true
+forceMultiTarget: true
+
+health: 90
+armor: 2
+
+Range: 990
+lifetime: 1240
+
+speed: 0.6
+rotateSpeed: 1.5
+hitSize: 2
+
+deathSound: none
+fallEffect: none
+deathExplosionEffect: none
+
+missileAccelTime: 1
+lowAltitude: true
+allowedInPayloads: false
+useUnitCap: false
+physics: false
+createWreck: false
+createScorch: false
+
+drawEngines: false
+engineSize: 0
+
+parts: [{
+    type: RegionPart
+    suffix: "-wingal"
+    /*moveY: -3*/
+    progress: smoothReload
+    /*progress: warmup*/
+    x: 0
+    moveRot: -34
+} {
+    type: RegionPart
+    suffix: "-wingar"
+    progress: smoothReload
+    x: 0
+    moveRot: 34
+}]
+
+weapons: [{
+    mirror: false
+    reload: 26
+    maxRange: 990
+    alwaysShooting: true
+
+    shoot: {
+        shots: 1
+        shotDelay: 14
+    }
+
+    ejectEffect: none
+    shootSound: none
+    inaccuracy: 20
+
+    bullet: {
+        type: BasicBulletType
+        sprite: scale_marker
+        maxRange: 990
+        lifetime: 94
+        speed: 1
+        damage: 1
+        splashDamage: 1
+        splashDamageRadius: 1
+        absorbable: false
+        reflectable: false
+
+        shootEffect: none
+        smokeEffect: none
+        hitEffect: none
+        hitsound: none
+        despawnSound: none
+    }
+}]
+
+research: bxbird

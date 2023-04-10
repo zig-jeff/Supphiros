@@ -1,0 +1,125 @@
+type: missile
+name: tankus-drone
+flying: true
+
+envDisabled: 0
+
+controller: MissileAI
+defaultController: MissileAI
+autoFindTarget: true
+forceMultiTarget: true
+
+health: 890
+armor: 14
+
+range: 980
+lifetime: 6850
+speed: 2.4
+rotateSpeed: 1.8
+/*drag: 0.07*/
+hitSize: 2
+
+missileAccelTime: 1
+lowAltitude: true
+fogRadius: 10
+hidden: true
+allowedInPayloads: false
+useUnitCap: false
+physics: false
+createWreck: false
+createScorch: false
+
+engineSize: 1
+engineOffset: 7
+trailLength: 5
+
+weapons: [
+    {
+        mirror: false
+        x: 0
+        y: 3
+        rotate: 175
+        shootCone: 35
+
+        reload: 14
+        /*shootOnDeath: true*/
+        /*shootEffect: none*/
+
+        despawnHit: true
+        despawnEffect: impactReactorExplosion
+
+        shootSound: sap
+
+        shoot: {
+            shots: 2
+            shotDelay: 4
+        }
+
+        bullet: {
+            type: BasicBulletType
+            width: 5
+            height: 7
+
+            lifetime: 72
+            speed: 3.2
+            damage: 62 /*----3----*/
+
+            trailWidth: 1
+            trailLength: 10
+        }
+    }
+
+    {
+        /*name: bomber*/
+        mirror: false
+        y: 0
+        reload: 19 /*----25----*/
+
+        shoot: {
+            type: ShootPattern
+            shots: 6
+            shotDelay: 7
+        }
+
+        ejectEffect: none
+        minShootVelocity: 0.75
+        shootCone: 180
+        shootSound: mineDeploy
+        inaccuracy: 20
+        ignoreRotation: true
+
+        bullet: {
+            type: BombBulletType
+            width: 13
+            height: 13
+            splashDamage: 44 /*----18----*/
+            splashDamageRadius: 18 /*----20----*/
+
+            shootEffect: none
+            smokeEffect: none
+            sprite: mine-bullet
+            spin: 5
+            shrinkY: 0.7
+            shrinkX: 0.7
+
+            backColor: ff98cb /*98ffa9*/
+            frontColor: ffffff
+
+            hitEffect: {
+                type: ExplosionEffect
+                lifetime: 32 /*23*/
+                waveStroke: 4
+                waveLife: 10
+                waveColor: ff98cb
+                waveRad: 15
+                smokes: 6
+                smokeColor: ffffff
+                sparkColor: ff98cb
+                sparks: 6
+                sparkRad: 20
+                sparkStroke: 1.5
+                sparkLen: 4
+            }
+        }
+    }
+]

@@ -1,0 +1,94 @@
+type: missile
+name: qdevastator-missile
+flying: true
+
+envDisabled: 0
+
+controller: MissileAI
+playerControllable: false
+
+health: 550
+armor: 44
+
+maxRange: 760
+lifetime: 850
+speed: 2.2
+rotateSpeed: 1.2
+hitSize: 4
+hidden: true
+
+outlineColor: 00000000
+/*outline: false*/
+
+engineSize: 1
+
+missileAccelTime: 1
+lowAltitude: true
+fogRadius: 16
+allowedInPayloads: false
+useUnitCap: false
+physics: false
+createWreck: true
+createScorch: false
+
+weapons: [{
+    mirror: false
+    shootCone: 360
+    x: 0
+    y: 0
+    reload: 46 /*450*/
+    shootOnDeath: true
+    shootEffect: none
+
+    bullet: {
+        type: BombBulletType
+        splashDamage: 2160
+        splashDamageRadius: 90
+        pierce: true
+        pierceBuilding: true
+        pierceArmor: true
+        reflectable: false
+        absorbable: false
+        instantDisappear: true
+        killShooter: true
+        hittable: false
+        collidesAir: true
+        despawnHit: true
+
+        despawnEffect: {
+            type: MultiEffect
+            effects: [{
+                    type: WaveEffect
+                    colorFrom: f3e979
+                    colorTo: f3a579
+                    lightColor: f3e979
+                    sizeFrom: 0
+                    sizeTo: 75
+                    sides: 0
+                    lifetime: 40
+                    strokeFrom: 12
+                    strokeTo: 0
+                }
+
+                {
+                    type: WaveEffect
+                    colorFrom: f3e979
+                    colorTo: f3a579
+                    lightColor: f3e979
+                    sizeFrom: 10
+                    sizeTo: 85
+                    sides: 0
+                    lifetime: 40
+                    strokeFrom: 4
+                    strokeTo: 0
+                }
+            ]
+        }
+    }
+}]
+
+abilities: [{
+    type: MoveEffectAbility
+    teamColor: true
+    y: -13
+}]

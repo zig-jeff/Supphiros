@@ -1,0 +1,64 @@
+type: missile
+name: pantagruel-missile
+flying: true
+
+envDisabled: 0
+
+controller: MissileAI
+playerControllable: false
+
+health: 410
+armor: 32
+
+maxRange: 270
+lifetime: 164
+speed: 3.4
+rotateSpeed: 5.2
+hitSize: 2
+hidden: true
+
+outlineColor: 00000000
+
+engineSize: 1
+
+missileAccelTime: 0.4
+lowAltitude: true
+fogRadius: 12
+allowedInPayloads: false
+useUnitCap: false
+physics: false
+createWreck: true
+createScorch: false
+
+weapons: [{
+    mirror: false
+    shootCone: 360
+    x: 0
+    y: 0
+    reload: 9
+    shootOnDeath: true
+    shootEffect: none
+
+    bullet: {
+        type: BombBulletType
+        splashDamage: 190
+        splashDamageRadius: 62
+        pierce: true
+        pierceBuilding: true
+        pierceArmor: true
+        reflectable: false
+        absorbable: false
+        instantDisappear: true
+        killShooter: true
+        hittable: false
+        collidesAir: true
+        /*despawnHit: true*/
+        /*despawnEffect: impactReactorExplosion*/
+    }
+}]
+
+abilities: [{
+    type: MoveEffectAbility
+    teamColor: true
+    y: -7
+}]
