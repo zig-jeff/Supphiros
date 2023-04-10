@@ -96,7 +96,7 @@ ekite: charge fighter with missiles, heavy bullet, and electric shocks.
 fstealth: long-range multi-warhead missile fighter.
  장거리 다탄두 미사일 전투기.
 
-tankus: heavy bullet-mounted insect that launch drones.
+tankus: heavy-bullet mounted insect that launch drones.
  드론 발사대와 중량탄을 장착한 인섹트.
 
 zstarkai: drone launch, omnidirectional laser, energy field, unit repair.
