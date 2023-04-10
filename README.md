@@ -1,6 +1,6 @@
 # Supphiros
 
-![unknown-14](https://github.com/zig-jeff/Supphiros/blob/main/Preview1.png)
+!(https://github.com/zig-jeff/Supphiros/blob/c773ac60cd90705f54213323d85ec108ea835b2b/Preview1.png)
 
 
 It's Cheat MOD for V7. Works on Erekir as well.
