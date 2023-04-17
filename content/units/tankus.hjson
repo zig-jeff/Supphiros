@@ -33,7 +33,7 @@ hitSize: 21
             legBaseOffset: 7
 
 legSplashDamage: 260
-legSplashRange: 50
+legSplashRange: 30
 
 /*shadowElevation: 0.2-0.4*/
 /*groundLayer: Layer.legUnit-1*/
@@ -124,8 +124,7 @@ weapons: [
     }
 
     {
-        /*name: tankus-drcv*/
-        outlineColor: 00000000
+        mirror: false
         x: 0
         y: 0
         shootY: 5
@@ -147,6 +146,25 @@ weapons: [
             speed: 0
             spawnUnit: tankus-drone
         }
+    }
+]
+
+abilities: [
+    {
+        type: EnergyFieldAbility
+        reload: 6
+        range: 46
+        damage: 70
+        color: f19149
+        maxTargets: 6
+        healPercent: 0.5
+        /*sectors: 3*/
+        effectRadius: 0
+        sectorRad: 0/*0.2*/
+        rotateSpeed: 1
+        blinkScl: 5
+        shootSound: spark
+        status: electrified
     }
 ]
 
