@@ -10,25 +10,32 @@ health: 36200
 armor: 24
 
 range: 940
-speed: 0.65
+speed: 0.8
 rotateSpeed: 2
 drag: 0.1
 hitSize: 21
-hovering: true
-
-/*rotateMoveFirst: true*/
 /*hovering: true*/
+/*rotateMoveFirst: true*/
 
-legCount: 6
-legLength: 9
-legForwardScl: 0.6
-legMoveSpace: 1.4
-legContinuousMove: true
-legBaseOffset: 2
+            lockLegBase: true
+            legContinuousMove: true
+            legGroupSize: 3
+            legStraightness:0.4
+            baseLegStraightness: 0.5
+            legMaxLength: 1.1
+            legMinLength: 0.2
+            legCount: 6
+            legLength: 14
+            legLengthScl: 0.95
+            legForwardScl: 0.9
+            legMoveSpace: 1
+            legExtension: -3
+            legBaseOffset: 7
+
 legSplashDamage: 260
 legSplashRange: 50
 
-/*shadowElevation: 0.2*/
+/*shadowElevation: 0.2-0.4*/
 /*groundLayer: Layer.legUnit-1*/
 
 itemCapacity: 90
@@ -38,12 +45,13 @@ weapons: [
         name: tankus-wing
         top: false
         outlineColor: 00000000
-        x: 6
-        y: 2.5
+        shootCone: 35
+        x: 5
+        y: 0
         reload: 75 /*----100----*/
         alternate: true
         rotate: false
-        recoil: 1.5
+        recoil: 3
         shootY: 8
 
         shootSound: laser
@@ -116,9 +124,16 @@ weapons: [
     }
 
     {
+        /*name: tankus-drcv*/
+        outlineColor: 00000000
         x: 0
-        y: 5
+        y: 0
         shootY: 5
+        shootCone: 35
+        alternate: false
+        rotate: false
+        recoil: 2
+        
         reload: 360 /*----100----*/
 
         MaxRange: 950
