@@ -14,7 +14,8 @@ speed: 0.8
 rotateSpeed: 2
 drag: 0.1
 hitSize: 21
-drownTimeMultiplier: 3
+drownTimeMultiplier: 40
+
 /*hovering: true*/
 /*rotateMoveFirst: true*/
 
