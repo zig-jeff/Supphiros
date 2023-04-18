@@ -73,8 +73,8 @@ weapons: [
             shrinkY: 0.1
 
             shootEffect: shootBig
-            backColor: c27ddd
-            frontColor: edbdff
+            backColor: f9cb9c
+            frontColor: f19149
             smokeEffect: shootBigSmoke
             trailEffect: none
 
@@ -108,9 +108,9 @@ weapons: [
                 waveRadBase: 3
                 waveLife: 60
                 waveRad: 100
-                waveColor: a78fff
-                smokeColor: 3e3 e3e
-                sparkColor: a78fff
+                waveColor: f19149
+                smokeColor: 3e3e3e
+                sparkColor: f19149
                 sparks: 30
                 smokes: 45
                 sparkRad: 100
