@@ -15,7 +15,6 @@ rotateSpeed: 2
 drag: 0.1
 hitSize: 21
 drownTimeMultiplier: 40
-immunities: [slow, wet, muddy, sapped, tarred, corroded]
 
 /*hovering: true*/
 /*rotateMoveFirst: true*/
@@ -76,8 +75,10 @@ weapons: [
             shrinkY: 0.1
 
             shootEffect: shootBig
-            backColor: f9cb9c
-            frontColor: f19149
+            backColor: ffa58a
+            /*c27ddd*/
+            frontColor: ffccbd
+            /*edbdff*/
             smokeEffect: shootBigSmoke
             trailEffect: none
 
@@ -91,9 +92,9 @@ weapons: [
                 waveRadBase: 3
                 waveLife: 60
                 waveRad: 100
-                waveColor: f19149
+                waveColor: ffccbd
                 smokeColor: 3e3e3e
-                sparkColor: f19149
+                sparkColor: ffccbd
                 sparks: 30
                 smokes: 45
                 sparkRad: 100
@@ -111,9 +112,9 @@ weapons: [
                 waveRadBase: 3
                 waveLife: 60
                 waveRad: 100
-                waveColor: f19149
+                waveColor: ffccbd
                 smokeColor: 3e3e3e
-                sparkColor: f19149
+                sparkColor: ffccbd
                 sparks: 30
                 smokes: 45
                 sparkRad: 100
